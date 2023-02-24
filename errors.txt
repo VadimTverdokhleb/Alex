@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 612: expected 'name' not found.
-    hide screen
-               ^
+File "game/script.rpy", line 778: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+        "После быстрого излечения, Алекс продолжила ходить на тренировки и наконец настал день турнира. Их университет играл против какого то колледжа с названием команды \"Барсуки""
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Tue Feb 21 19:22:24 2023
+Fri Feb 24 18:52:10 2023
