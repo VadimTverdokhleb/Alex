@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 818: expected statement.
-    "У Алекс сейчас было одно желание - провалиться сквозь землю." 
-                                                                   ^
+File "game/script.rpy", line 863: end of line expected.
+    comment "Отличный бросок питчера львов!" 
+                                            ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Fri Feb 24 21:21:58 2023
+Mon Feb 27 21:28:03 2023
