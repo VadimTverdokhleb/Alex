@@ -1,38 +1,38 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/animation.rpy", line 1, in script
-    init python:
-  File "game/animation.rpy", line 1, in script
-    init python:
-  File "game/animation.rpy", line 12, in <module>
-    image_animation('image_name.png', [(1, 'image_name.png'), (1, 'image_name_2.png'), (1, 'image_name_3.png')])
-  File "game/animation.rpy", line 5, in image_animation
-    image_show(image)  # отображаем изображение
-NameError: global name 'image_show' is not defined
+  File "game/script.rpy", line 926, in script
+    with vpunch(100)
+  File "game/script.rpy", line 926, in <module>
+    with vpunch(100)
+Exception: Not a displayable: 100
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/bootstrap.py", line 331, in bootstrap
-    renpy.main.main()
-  File "renpy/main.py", line 560, in main
-    renpy.game.context().run(node)
-  File "game/animation.rpy", line 1, in script
-    init python:
-  File "game/animation.rpy", line 1, in script
-    init python:
-  File "renpy/ast.py", line 928, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "renpy/python.py", line 2245, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/animation.rpy", line 12, in <module>
-    image_animation('image_name.png', [(1, 'image_name.png'), (1, 'image_name_2.png'), (1, 'image_name_3.png')])
-  File "game/animation.rpy", line 5, in image_animation
-    image_show(image)  # отображаем изображение
-NameError: global name 'image_show' is not defined
+  File "game/script.rpy", line 926, in script
+    with vpunch(100)
+  File "renpy/ast.py", line 1436, in execute
+    trans = renpy.python.py_eval(self.expr)
+  File "renpy/python.py", line 2276, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "renpy/python.py", line 2269, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 926, in <module>
+    with vpunch(100)
+  File "renpy/curry.py", line 48, in __call__
+    return self.callable(*(self.args + args), **merged_kwargs)
+  File "renpy/display/motion.py", line 308, in Move
+    **properties)
+  File "renpy/display/motion.py", line 102, in __init__
+    self.add(child)
+  File "renpy/display/layout.py", line 201, in add
+    child = renpy.easy.displayable(d)
+  File "renpy/easy.py", line 139, in displayable
+    raise Exception("Not a displayable: %r" % (d,))
+Exception: Not a displayable: 100
 
 Windows-10-10.0.19041
 Ren'Py 7.4.11.2266
 Alex 1.0
-Sun Feb 19 19:40:08 2023
+Wed Mar  1 23:17:34 2023
