@@ -1,38 +1,32 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 926, in script
-    with vpunch(100)
-  File "game/script.rpy", line 926, in <module>
-    with vpunch(100)
-Exception: Not a displayable: 100
+  File "game/script.rpy", line 1013, in script
+    show screen e_hospital
+  File "renpy/common/000statements.rpy", line 548, in execute_show_screen
+    renpy.show_screen(name, *args, **kwargs)
+Exception: Screen e_hospital is not known.
+
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 926, in script
-    with vpunch(100)
-  File "renpy/ast.py", line 1436, in execute
-    trans = renpy.python.py_eval(self.expr)
-  File "renpy/python.py", line 2276, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "renpy/python.py", line 2269, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 926, in <module>
-    with vpunch(100)
-  File "renpy/curry.py", line 48, in __call__
-    return self.callable(*(self.args + args), **merged_kwargs)
-  File "renpy/display/motion.py", line 308, in Move
-    **properties)
-  File "renpy/display/motion.py", line 102, in __init__
-    self.add(child)
-  File "renpy/display/layout.py", line 201, in add
-    child = renpy.easy.displayable(d)
-  File "renpy/easy.py", line 139, in displayable
-    raise Exception("Not a displayable: %r" % (d,))
-Exception: Not a displayable: 100
+  File "game/script.rpy", line 1013, in script
+    show screen e_hospital
+  File "renpy/ast.py", line 2015, in execute
+    self.call("execute")
+  File "renpy/ast.py", line 2003, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "renpy/statements.py", line 278, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 548, in execute_show_screen
+    renpy.show_screen(name, *args, **kwargs)
+  File "renpy/display/screen.py", line 1131, in show_screen
+    raise Exception("Screen %s is not known.\n" % (name[0],))
+Exception: Screen e_hospital is not known.
+
 
 Windows-10-10.0.19041
 Ren'Py 7.4.11.2266
 Alex 1.0
-Wed Mar  1 23:17:34 2023
+Fri Mar  3 23:05:48 2023
