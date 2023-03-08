@@ -1,4 +1,4 @@
-Sat Mar  4 23:32:43 2023
+Wed Mar  8 22:22:06 2023
 Windows-10-10.0.19041
 Ren'Py 7.4.11.2266
  
@@ -7,7 +7,7 @@ Bootstrap to the start of init.init took 0.12s
 Early init took 0.00s
 Loader init took 0.01s
 Loading error handling took 0.03s
-Loading script took 0.49s
+Loading script took 0.53s
 Loading save slot metadata. took 0.04s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
@@ -31,11 +31,11 @@ Load screen analysis took 0.00s
 Analyze screens took 0.02s
 Save screen analysis took 0.04s
 Prepare screens took 0.08s
-Save pyanalysis. took 0.05s
-Save bytecode. took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.14s
+Interface start took 0.12s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
