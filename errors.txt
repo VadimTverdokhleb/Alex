@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1586: expected statement.
-    "Алекс присела на место, сбоку фортепиано." 
-                                                ^
+File "game/script.rpy", line 1628: play requires a file
+    play music
+              ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Sat Mar 18 00:16:35 2023
+Mon Mar 20 19:04:24 2023
