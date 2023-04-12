@@ -2,9 +2,14 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1628: play requires a file
-    play music
-              ^
+File "game/script.rpy", line 2085: expected statement.
+(Perhaps you left out a " at the end of the first line.)
+    nvl """
+       ^
+        {i}Алекс, это все тебе, поможет от похмелья, у тебя перепой от микса конфет с ликером и гадкой травы, которую подсунул тебе этот козел.
+        Я взял смелость купить тебе еще эту коробочку, на всякий случай, извини, что ставлю в неловкое положение.
+        Твой друг Джеймс.{/i}
+        """
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Mon Mar 20 19:04:24 2023
+Wed Apr 12 22:14:05 2023

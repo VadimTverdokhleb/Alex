@@ -1,32 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 1013, in script
-    show screen e_hospital
-  File "renpy/common/000statements.rpy", line 548, in execute_show_screen
-    renpy.show_screen(name, *args, **kwargs)
-Exception: Screen e_hospital is not known.
-
+  File "game/script.rpy", line 2025, in script
+    scene dorm_room with dissove
+  File "game/script.rpy", line 2025, in <module>
+    scene dorm_room with dissove
+NameError: name 'dissove' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 1013, in script
-    show screen e_hospital
-  File "renpy/ast.py", line 2015, in execute
-    self.call("execute")
-  File "renpy/ast.py", line 2003, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "renpy/statements.py", line 278, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 548, in execute_show_screen
-    renpy.show_screen(name, *args, **kwargs)
-  File "renpy/display/screen.py", line 1131, in show_screen
-    raise Exception("Screen %s is not known.\n" % (name[0],))
-Exception: Screen e_hospital is not known.
-
+  File "game/script.rpy", line 2025, in script
+    scene dorm_room with dissove
+  File "renpy/ast.py", line 1439, in execute
+    paired = renpy.python.py_eval(self.paired)
+  File "renpy/python.py", line 2276, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "renpy/python.py", line 2269, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 2025, in <module>
+    scene dorm_room with dissove
+NameError: name 'dissove' is not defined
 
 Windows-10-10.0.19041
 Ren'Py 7.4.11.2266
 Alex 1.0
-Fri Mar  3 23:05:48 2023
+Wed Apr 12 22:08:13 2023
