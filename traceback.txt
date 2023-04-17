@@ -1,16 +1,16 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 2025, in script
+  File "game/script.rpy", line 2163, in script
     scene dorm_room with dissove
-  File "game/script.rpy", line 2025, in <module>
+  File "game/script.rpy", line 2163, in <module>
     scene dorm_room with dissove
 NameError: name 'dissove' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 2025, in script
+  File "game/script.rpy", line 2163, in script
     scene dorm_room with dissove
   File "renpy/ast.py", line 1439, in execute
     paired = renpy.python.py_eval(self.paired)
@@ -18,11 +18,11 @@ Full traceback:
     return py_eval_bytecode(code, globals, locals)
   File "renpy/python.py", line 2269, in py_eval_bytecode
     return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 2025, in <module>
+  File "game/script.rpy", line 2163, in <module>
     scene dorm_room with dissove
 NameError: name 'dissove' is not defined
 
 Windows-10-10.0.19041
 Ren'Py 7.4.11.2266
 Alex 1.0
-Wed Apr 12 22:08:13 2023
+Mon Apr 17 18:31:21 2023
